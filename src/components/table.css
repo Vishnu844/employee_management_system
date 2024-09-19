@@ -1,0 +1,90 @@
+.table-wrapper {
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.employees-table-top,
+.employees-table-top-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employees-table-top {
+  justify-content: space-between;
+}
+
+.delete {
+  background-color: rgb(245, 100, 100);
+}
+
+.employees-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employees-table-cell {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+  width: 220px;
+  white-space: nowrap;
+}
+
+.employee-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.search-bar {
+  margin: 1rem;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #959595;
+  outline: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span {
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination__disable {
+  opacity: 0;
+}
+
+.pagination__selected {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .employees-table-cell {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 12px;
+    width: 220px;
+    white-space: nowrap;
+  }
+}
